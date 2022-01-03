@@ -1,0 +1,32 @@
+{
+
+  /****
+  * paths required : Please change the paths to reflect your locations
+  ****/
+
+  "inputData" : "/media/acer/7DC832E057A5BDB1/JMJTL/Tomslabs/Datasets/Retail/OnlineRetail.csv",
+  "custDetails" : "/media/acer/7DC832E057A5BDB1/JMJTL/Tomslabs/BayesianQuest/RL_Recomendations/rlreco/output/custDetails.pkl",
+
+  /****
+  * Column mapping
+  ****/
+
+  "order_id" : "InvoiceNo",
+  "product_id": "StockCode",
+  "product" : "Description",
+  "prod_qnty" : "Quantity",
+  "order_date" : "InvoiceDate",
+  "unit_price" : "UnitPrice",
+  "customer_id" : "CustomerID",
+    /****
+  * Parameters
+  ****/
+
+  "nclust" : 4,
+  "monthPer" : 15,
+  "epsilon" : 0.1,
+  "nProducts" : 10,
+  "buyReward" : 5,
+  "clickReward": 1,
+  "ignore" : -2
+}
